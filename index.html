@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligents - B2B Meetings Automation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="4" y="4" width="24" height="24" rx="6" fill="#0F172A"/>
+                        <circle cx="12" cy="12" r="2" fill="#06B6D4"/>
+                        <circle cx="20" cy="12" r="2" fill="#06B6D4"/>
+                        <circle cx="12" cy="20" r="2" fill="#06B6D4"/>
+                        <circle cx="20" cy="20" r="2" fill="#06B6D4"/>
+                        <line x1="12" y1="12" x2="20" y2="12" stroke="#84CC16" stroke-width="1.5"/>
+                        <line x1="12" y1="20" x2="20" y2="20" stroke="#84CC16" stroke-width="1.5"/>
+                        <line x1="12" y1="12" x2="12" y2="20" stroke="#84CC16" stroke-width="1.5"/>
+                        <line x1="20" y1="12" x2="20" y2="20" stroke="#84CC16" stroke-width="1.5"/>
+                    </svg>
+                    <span class="logo-text">Intelligents</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-secondary">Sign In</button>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Intelligent Meetings, <span class="highlight">Automated</span></h1>
+                <p class="hero-subtitle">Transform your B2B meeting workflows with AI-powered scheduling, coordination, and insights. Save time, increase efficiency, and focus on what matters.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary-large">Start Free Trial</button>
+                    <button class="btn-secondary-large">Watch Demo</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg viewBox="0 0 600 400" fill="none">
+                    <!-- Central hub -->
+                    <circle cx="300" cy="200" r="60" fill="#0F172A"/>
+                    <circle cx="300" cy="200" r="50" fill="#1E293B"/>
+                    <text x="300" y="205" text-anchor="middle" fill="#06B6D4" font-size="20" font-weight="600">AI</text>
+
+                    <!-- Connection nodes -->
+                    <circle cx="150" cy="100" r="35" fill="#475569"/>
+                    <circle cx="450" cy="100" r="35" fill="#475569"/>
+                    <circle cx="150" cy="300" r="35" fill="#475569"/>
+                    <circle cx="450" cy="300" r="35" fill="#475569"/>
+
+                    <!-- Connecting lines -->
+                    <line x1="300" y1="200" x2="150" y2="100" stroke="#84CC16" stroke-width="2"/>
+                    <line x1="300" y1="200" x2="450" y2="100" stroke="#84CC16" stroke-width="2"/>
+                    <line x1="300" y1="200" x2="150" y2="300" stroke="#84CC16" stroke-width="2"/>
+                    <line x1="300" y1="200" x2="450" y2="300" stroke="#84CC16" stroke-width="2"/>
+
+                    <!-- Icons in nodes -->
+                    <circle cx="150" cy="100" r="12" fill="#06B6D4"/>
+                    <circle cx="450" cy="100" r="12" fill="#06B6D4"/>
+                    <circle cx="150" cy="300" r="12" fill="#06B6D4"/>
+                    <circle cx="450" cy="300" r="12" fill="#06B6D4"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Streamline Every Meeting</h2>
+                <p class="section-subtitle">Powerful automation tools designed for modern B2B teams</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#EFF6FF"/>
+                            <circle cx="24" cy="18" r="4" fill="#1E40AF"/>
+                            <path d="M16 32C16 28 19 26 24 26C29 26 32 28 32 32" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Scheduling</h3>
+                    <p class="feature-description">AI-powered calendar coordination that finds optimal meeting times across teams and time zones automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#ECFDF5"/>
+                            <path d="M18 24L22 28L30 20" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Automated Follow-ups</h3>
+                    <p class="feature-description">Never miss a beat with intelligent reminders, action items tracking, and automated summary distribution.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#F0FDFA"/>
+                            <rect x="16" y="20" width="6" height="12" rx="1" fill="#0891B2"/>
+                            <rect x="24" y="16" width="6" height="16" rx="1" fill="#06B6D4"/>
+                            <rect x="32" y="22" width="6" height="10" rx="1" fill="#22D3EE"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Analytics & Insights</h3>
+                    <p class="feature-description">Track meeting efficiency, participation patterns, and ROI with real-time dashboards and reports.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#F7FEE7"/>
+                            <circle cx="18" cy="18" r="3" fill="#65A30D"/>
+                            <circle cx="30" cy="18" r="3" fill="#65A30D"/>
+                            <circle cx="24" cy="30" r="3" fill="#65A30D"/>
+                            <line x1="18" y1="18" x2="30" y2="18" stroke="#84CC16" stroke-width="2"/>
+                            <line x1="18" y1="18" x2="24" y2="30" stroke="#84CC16" stroke-width="2"/>
+                            <line x1="30" y1="18" x2="24" y2="30" stroke="#84CC16" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Seamless Integration</h3>
+                    <p class="feature-description">Connect with Google Calendar, Microsoft 365, Zoom, Teams, and your existing workflow tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Three Steps to Clarity</h2>
+                <p class="section-subtitle">Simple setup, powerful results</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Connect</h3>
+                        <p class="step-description">Link your calendar and communication tools in minutes. No complex configuration required.</p>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <svg width="100" height="4" viewBox="0 0 100 4" fill="none">
+                        <line x1="0" y1="2" x2="100" y2="2" stroke="#E2E8F0" stroke-width="4"/>
+                    </svg>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Automate</h3>
+                        <p class="step-description">Set your preferences and let AI handle scheduling, reminders, and coordination.</p>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <svg width="100" height="4" viewBox="0 0 100 4" fill="none">
+                        <line x1="0" y1="2" x2="100" y2="2" stroke="#E2E8F0" stroke-width="4"/>
+                    </svg>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Optimize</h3>
+                        <p class="step-description">Review insights and continuously improve your team's meeting effectiveness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">87%</div>
+                    <div class="stat-label">Time Saved</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">10k+</div>
+                    <div class="stat-label">Teams Using</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">2M+</div>
+                    <div class="stat-label">Meetings Automated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that fits your team</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-tier">Starter</h3>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">29</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 50 meetings/month</li>
+                        <li>Basic scheduling automation</li>
+                        <li>Email integration</li>
+                        <li>Standard support</li>
+                    </ul>
+                    <button class="btn-secondary-large">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3 class="pricing-tier">Professional</h3>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited meetings</li>
+                        <li>Advanced AI automation</li>
+                        <li>Full integrations suite</li>
+                        <li>Analytics & insights</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="btn-primary-large">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-tier">Enterprise</h3>
+                    <div class="pricing-amount">
+                        <span class="price-custom">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Everything in Professional</li>
+                        <li>Custom integrations</li>
+                        <li>Dedicated account manager</li>
+                        <li>SLA guarantee</li>
+                        <li>Advanced security</li>
+                    </ul>
+                    <button class="btn-secondary-large">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Meetings?</h2>
+                <p class="cta-subtitle">Join thousands of teams already saving time with intelligent automation</p>
+                <button class="btn-primary-large">Start Your Free Trial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="4" width="24" height="24" rx="6" fill="#0F172A"/>
+                            <circle cx="12" cy="12" r="2" fill="#06B6D4"/>
+                            <circle cx="20" cy="12" r="2" fill="#06B6D4"/>
+                            <circle cx="12" cy="20" r="2" fill="#06B6D4"/>
+                            <circle cx="20" cy="20" r="2" fill="#06B6D4"/>
+                            <line x1="12" y1="12" x2="20" y2="12" stroke="#84CC16" stroke-width="1.5"/>
+                            <line x1="12" y1="20" x2="20" y2="20" stroke="#84CC16" stroke-width="1.5"/>
+                            <line x1="12" y1="12" x2="12" y2="20" stroke="#84CC16" stroke-width="1.5"/>
+                            <line x1="20" y1="12" x2="20" y2="20" stroke="#84CC16" stroke-width="1.5"/>
+                        </svg>
+                        <span class="logo-text">Intelligents</span>
+                    </div>
+                    <p class="footer-tagline">Intelligent meetings for intelligent teams</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Intelligents. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
