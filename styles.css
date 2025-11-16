@@ -458,10 +458,11 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 
 .hero-title {
     font-size: var(--text-6xl);
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.03em;
     margin-bottom: var(--space-6);
+    color: var(--navy-900);
 }
 
 .highlight {
@@ -633,14 +634,31 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 .trust-section {
     padding: var(--space-16) 0;
     background-color: var(--white);
-    border-bottom: 1px solid var(--border);
+    border-bottom: var(--outline-width) solid var(--outline-color);
+    position: relative;
+}
+
+.trust-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle, rgba(10, 14, 26, 0.02) 1px, transparent 1px);
+    background-size: 16px 16px;
+    pointer-events: none;
 }
 
 .trust-text {
     text-align: center;
     font-size: var(--text-sm);
-    color: var(--text-tertiary);
+    color: var(--navy-900);
     margin-bottom: var(--space-8);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .logo-carousel {
@@ -650,21 +668,25 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 
 .logo-track {
     display: flex;
-    gap: var(--space-12);
-    animation: scroll 30s linear infinite;
+    gap: var(--space-16);
+    animation: scroll 40s linear infinite;
 }
 
 .client-logo {
     flex-shrink: 0;
     font-size: var(--text-lg);
-    font-weight: 600;
-    color: var(--graphite-500);
-    opacity: 0.6;
-    transition: opacity var(--transition-base);
+    font-weight: 700;
+    color: var(--navy-900);
+    opacity: 0.4;
+    transition: all var(--transition-base);
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-lg);
 }
 
 .client-logo:hover {
     opacity: 1;
+    background-color: var(--lime-50);
+    transform: translateY(-2px);
 }
 
 /* ===================================
@@ -696,6 +718,21 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 .section-title {
     margin-bottom: var(--space-4);
     color: var(--navy-900);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--lime-500) 0%, var(--azure-500) 100%);
+    border-radius: 2px;
 }
 
 .section-subtitle {
@@ -708,7 +745,21 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
    =================================== */
 
 .complete-solution {
-    background-color: var(--white);
+    background: linear-gradient(180deg, var(--white) 0%, var(--graphite-50) 100%);
+    position: relative;
+}
+
+.complete-solution::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle, rgba(10, 14, 26, 0.02) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
 }
 
 .solution-grid {
@@ -782,11 +833,28 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 .results-section {
     background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
     color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.results-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 30% 40%, var(--comic-yellow) 0%, transparent 20%),
+        radial-gradient(circle at 70% 60%, var(--comic-pink) 0%, transparent 18%);
+    opacity: 0.08;
+    pointer-events: none;
 }
 
 .results-section .section-tag {
-    background-color: rgba(132, 204, 22, 0.2);
-    color: var(--lime-400);
+    background-color: var(--comic-yellow);
+    color: var(--navy-900);
+    border: var(--outline-width) solid var(--navy-900);
 }
 
 .results-section .section-title {
@@ -844,25 +912,27 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 
 .result-value {
     font-size: var(--text-6xl);
-    font-weight: 700;
-    color: var(--lime-400);
+    font-weight: 900;
+    color: var(--lime-600);
 }
 
 .result-percent, .result-suffix {
     font-size: var(--text-3xl);
-    font-weight: 600;
-    color: var(--lime-400);
+    font-weight: 700;
+    color: var(--lime-600);
 }
 
 .result-card h3 {
     font-size: var(--text-lg);
-    color: var(--white);
+    color: var(--navy-900);
     margin-bottom: var(--space-3);
+    font-weight: 700;
 }
 
 .result-card p {
     font-size: var(--text-sm);
-    color: var(--azure-100);
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* ===================================
@@ -870,7 +940,21 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
    =================================== */
 
 .process-section {
-    background-color: var(--graphite-50);
+    background: linear-gradient(180deg, var(--graphite-50) 0%, var(--white) 100%);
+    position: relative;
+}
+
+.process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle, rgba(10, 14, 26, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
 }
 
 .process-timeline {
@@ -995,7 +1079,22 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
    =================================== */
 
 .calculator-section {
-    background-color: var(--white);
+    background: linear-gradient(180deg, var(--white) 0%, var(--azure-50) 100%);
+    position: relative;
+}
+
+.calculator-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 25% 25%, var(--comic-yellow) 0%, transparent 30%),
+        radial-gradient(circle at 75% 75%, var(--lime-500) 0%, transparent 25%);
+    opacity: 0.04;
+    pointer-events: none;
 }
 
 .calculator-wrapper {
@@ -1171,7 +1270,21 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
    =================================== */
 
 .testimonials-section {
-    background-color: var(--graphite-50);
+    background: linear-gradient(180deg, var(--graphite-50) 0%, var(--white) 100%);
+    position: relative;
+}
+
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle, rgba(10, 14, 26, 0.015) 1px, transparent 1px);
+    background-size: 18px 18px;
+    pointer-events: none;
 }
 
 .testimonial-card {
@@ -1293,33 +1406,57 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 
 .faq-section {
     background-color: var(--white);
+    position: relative;
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle, rgba(10, 14, 26, 0.015) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
 }
 
 .faq-list {
     max-width: 800px;
     margin: 0 auto var(--space-12);
+    position: relative;
+    z-index: 1;
 }
 
 .faq-item {
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid var(--border);
+    background: var(--white);
+    margin-bottom: var(--space-4);
+    border-radius: var(--radius-lg);
+    border: var(--outline-width) solid var(--outline-color);
+    box-shadow: 4px 4px 0px rgba(10, 14, 26, 0.08);
+    overflow: hidden;
 }
 
 .faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-6) 0;
+    padding: var(--space-5) var(--space-6);
     cursor: pointer;
-    transition: color var(--transition-fast);
+    transition: all var(--transition-base);
+    background: var(--white);
 }
 
 .faq-question:hover {
-    color: var(--azure-500);
+    background-color: var(--lime-50);
 }
 
 .faq-question h3 {
     font-size: var(--text-lg);
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--navy-900);
 }
 
 .faq-toggle {
@@ -1327,10 +1464,20 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
     font-weight: 300;
     color: var(--lime-600);
     transition: transform var(--transition-base);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--lime-50);
+    flex-shrink: 0;
 }
 
 .faq-item.active .faq-toggle {
     transform: rotate(45deg);
+    background: var(--lime-500);
+    color: var(--navy-900);
 }
 
 .faq-answer {
@@ -1341,12 +1488,15 @@ button, a.btn-primary, a.btn-secondary, a.btn-primary-large, a.btn-secondary-lar
 
 .faq-item.active .faq-answer {
     max-height: 500px;
-    padding-bottom: var(--space-6);
+    padding: 0 var(--space-6) var(--space-6);
+    background: var(--graphite-50);
 }
 
 .faq-answer p {
     font-size: var(--text-base);
     line-height: 1.7;
+    color: var(--text-secondary);
+    padding-top: var(--space-4);
 }
 
 .faq-cta {
