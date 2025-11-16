@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intelligents - B2B Meetings Automation</title>
+    <title>Intelligents - Pipeline-as-a-Service | Book More Sales Meetings</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -29,14 +29,14 @@
                     <span class="logo-text">Intelligents</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#calculator">ROI Calculator</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <button class="btn-secondary">Sign In</button>
-                    <button class="btn-primary">Get Started</button>
+                    <a href="mailto:ivan@intelligents.agency" class="btn-secondary">Contact Us</a>
+                    <a href="#booking" class="btn-primary">Book a Call</a>
                 </div>
             </nav>
         </div>
@@ -46,234 +46,567 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Intelligent Meetings, <span class="highlight">Automated</span></h1>
-                <p class="hero-subtitle">Transform your B2B meeting workflows with AI-powered scheduling, coordination, and insights. Save time, increase efficiency, and focus on what matters.</p>
-                <div class="hero-actions">
-                    <button class="btn-primary-large">Start Free Trial</button>
-                    <button class="btn-secondary-large">Watch Demo</button>
+                <h1 class="hero-title animate-fade-in">Book More Sales Meetings, <span class="highlight">Faster</span></h1>
+                <p class="hero-subtitle animate-fade-in-delay-1">We connect you with decision-makers and schedule qualified calls directly in your calendar. Pay only when they show up.</p>
+                <div class="hero-actions animate-fade-in-delay-2">
+                    <a href="#booking" class="btn-primary-large">Start Booking Meetings</a>
+                    <a href="#calculator" class="btn-secondary-large">See ROI Calculator</a>
+                </div>
+
+                <!-- Live Stats -->
+                <div class="live-stats animate-fade-in-delay-3">
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="247">0</div>
+                        <div class="stat-text">Meetings Booked</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-suffix">%</div>
+                        <div class="stat-text">Show-up Rate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">$</div>
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-suffix">M</div>
+                        <div class="stat-text">Pipeline Value</div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <svg viewBox="0 0 600 400" fill="none">
-                    <!-- Central hub -->
-                    <circle cx="300" cy="200" r="60" fill="#0F172A"/>
-                    <circle cx="300" cy="200" r="50" fill="#1E293B"/>
-                    <text x="300" y="205" text-anchor="middle" fill="#06B6D4" font-size="20" font-weight="600">AI</text>
 
-                    <!-- Connection nodes -->
-                    <circle cx="150" cy="100" r="35" fill="#475569"/>
-                    <circle cx="450" cy="100" r="35" fill="#475569"/>
-                    <circle cx="150" cy="300" r="35" fill="#475569"/>
-                    <circle cx="450" cy="300" r="35" fill="#475569"/>
-
-                    <!-- Connecting lines -->
-                    <line x1="300" y1="200" x2="150" y2="100" stroke="#84CC16" stroke-width="2"/>
-                    <line x1="300" y1="200" x2="450" y2="100" stroke="#84CC16" stroke-width="2"/>
-                    <line x1="300" y1="200" x2="150" y2="300" stroke="#84CC16" stroke-width="2"/>
-                    <line x1="300" y1="200" x2="450" y2="300" stroke="#84CC16" stroke-width="2"/>
-
-                    <!-- Icons in nodes -->
-                    <circle cx="150" cy="100" r="12" fill="#06B6D4"/>
-                    <circle cx="450" cy="100" r="12" fill="#06B6D4"/>
-                    <circle cx="150" cy="300" r="12" fill="#06B6D4"/>
-                    <circle cx="450" cy="300" r="12" fill="#06B6D4"/>
-                </svg>
+            <!-- Calendar Visual -->
+            <div class="hero-visual animate-slide-in">
+                <div class="calendar-widget">
+                    <div class="calendar-header">
+                        <h3>December 2024</h3>
+                        <div class="calendar-subtitle">Live Bookings</div>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day-header">S</div>
+                        <div class="calendar-day-header">M</div>
+                        <div class="calendar-day-header">T</div>
+                        <div class="calendar-day-header">W</div>
+                        <div class="calendar-day-header">T</div>
+                        <div class="calendar-day-header">F</div>
+                        <div class="calendar-day-header">S</div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day booked">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day booked">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day booked">9</div>
+                        <div class="calendar-day booked">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day booked">12</div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day booked">16</div>
+                        <div class="calendar-day booked">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day booked">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day booked">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day booked">30</div>
+                        <div class="calendar-day">31</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Trust Logos -->
+    <section class="trust-section">
+        <div class="container">
+            <p class="trust-text">Trusted by 150+ growth-focused teams worldwide</p>
+            <div class="logo-carousel">
+                <div class="logo-track">
+                    <div class="client-logo">Workato</div>
+                    <div class="client-logo">Azuri</div>
+                    <div class="client-logo">WebGrowth</div>
+                    <div class="client-logo">Teamworks</div>
+                    <div class="client-logo">Ginevra</div>
+                    <div class="client-logo">Dalvian</div>
+                    <div class="client-logo">Compramos</div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="client-logo">Workato</div>
+                    <div class="client-logo">Azuri</div>
+                    <div class="client-logo">WebGrowth</div>
+                    <div class="client-logo">Teamworks</div>
+                    <div class="client-logo">Ginevra</div>
+                    <div class="client-logo">Dalvian</div>
+                    <div class="client-logo">Compramos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Solution -->
+    <section id="solution" class="complete-solution">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Streamline Every Meeting</h2>
-                <p class="section-subtitle">Powerful automation tools designed for modern B2B teams</p>
+                <div class="section-tag">Complete Solution</div>
+                <h2 class="section-title">Your Complete Sales Pipeline Solution</h2>
+                <p class="section-subtitle">From prospect identification to qualified meetings, we handle every step of your outreach process with precision and expertise.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#EFF6FF"/>
-                            <circle cx="24" cy="18" r="4" fill="#1E40AF"/>
-                            <path d="M16 32C16 28 19 26 24 26C29 26 32 28 32 32" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+            <div class="solution-grid">
+                <div class="solution-card scroll-animate">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="12" r="5" stroke="#06B6D4" stroke-width="2"/>
+                            <circle cx="12" cy="26" r="4" stroke="#06B6D4" stroke-width="2"/>
+                            <circle cx="28" cy="26" r="4" stroke="#06B6D4" stroke-width="2"/>
+                            <line x1="20" y1="17" x2="12" y2="22" stroke="#84CC16" stroke-width="2"/>
+                            <line x1="20" y1="17" x2="28" y2="22" stroke="#84CC16" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Smart Scheduling</h3>
-                    <p class="feature-description">AI-powered calendar coordination that finds optimal meeting times across teams and time zones automatically.</p>
+                    <h3>Decision-Maker Identification</h3>
+                    <p>Pinpoint the right executives and buyers in your market to fast-track qualified conversations.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#ECFDF5"/>
-                            <path d="M18 24L22 28L30 20" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <div class="solution-card scroll-animate">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="10" width="24" height="20" rx="2" stroke="#06B6D4" stroke-width="2"/>
+                            <line x1="8" y1="16" x2="32" y2="16" stroke="#84CC16" stroke-width="2"/>
+                            <line x1="12" y1="21" x2="20" y2="21" stroke="#475569" stroke-width="1.5"/>
+                            <line x1="12" y1="25" x2="28" y2="25" stroke="#475569" stroke-width="1.5"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Automated Follow-ups</h3>
-                    <p class="feature-description">Never miss a beat with intelligent reminders, action items tracking, and automated summary distribution.</p>
+                    <h3>Pre-Call Dossiers</h3>
+                    <p>Walk into every call with insights, pain points, and talking points tailored to each prospect.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#F0FDFA"/>
-                            <rect x="16" y="20" width="6" height="12" rx="1" fill="#0891B2"/>
-                            <rect x="24" y="16" width="6" height="16" rx="1" fill="#06B6D4"/>
-                            <rect x="32" y="22" width="6" height="10" rx="1" fill="#22D3EE"/>
+                <div class="solution-card scroll-animate">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M18 24L22 28L30 20" stroke="#84CC16" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="20" cy="20" r="12" stroke="#06B6D4" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Analytics & Insights</h3>
-                    <p class="feature-description">Track meeting efficiency, participation patterns, and ROI with real-time dashboards and reports.</p>
+                    <h3>Qualified Meeting Booking</h3>
+                    <p>We only schedule meetings with prospects who are genuinely interested — no time-wasters.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="8" width="32" height="32" rx="8" fill="#F7FEE7"/>
-                            <circle cx="18" cy="18" r="3" fill="#65A30D"/>
-                            <circle cx="30" cy="18" r="3" fill="#65A30D"/>
-                            <circle cx="24" cy="30" r="3" fill="#65A30D"/>
-                            <line x1="18" y1="18" x2="30" y2="18" stroke="#84CC16" stroke-width="2"/>
-                            <line x1="18" y1="18" x2="24" y2="30" stroke="#84CC16" stroke-width="2"/>
-                            <line x1="30" y1="18" x2="24" y2="30" stroke="#84CC16" stroke-width="2"/>
+                <div class="solution-card scroll-animate">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="10" y="8" width="20" height="24" rx="2" stroke="#06B6D4" stroke-width="2"/>
+                            <line x1="14" y1="14" x2="26" y2="14" stroke="#84CC16" stroke-width="2"/>
+                            <line x1="14" y1="19" x2="22" y2="19" stroke="#475569" stroke-width="1.5"/>
+                            <line x1="14" y1="24" x2="24" y2="24" stroke="#475569" stroke-width="1.5"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Seamless Integration</h3>
-                    <p class="feature-description">Connect with Google Calendar, Microsoft 365, Zoom, Teams, and your existing workflow tools.</p>
+                    <h3>Meeting Delivery & Calendar Sync</h3>
+                    <p>Qualified meetings are placed directly on your calendar—no extra steps.</p>
+                </div>
+                <div class="solution-card scroll-animate">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="15" r="5" stroke="#06B6D4" stroke-width="2"/>
+                            <path d="M12 32C12 27 15 24 20 24C25 24 28 27 28 32" stroke="#06B6D4" stroke-width="2"/>
+                            <path d="M25 18L30 23L35 18" stroke="#84CC16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Dedicated Account Management</h3>
+                    <p>A hands-on team that tunes your pipeline, improves meeting quality, and provides clear performance updates.</p>
+                </div>
+                <div class="solution-card scroll-animate">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="12" stroke="#06B6D4" stroke-width="2"/>
+                            <line x1="20" y1="12" x2="20" y2="20" stroke="#84CC16" stroke-width="2.5" stroke-linecap="round"/>
+                            <line x1="20" y1="20" x2="25" y2="23" stroke="#84CC16" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Pay-Per-Meeting Model</h3>
+                    <p>Zero upfront costs. Only pay when qualified meetings actually happen—guaranteed ROI.</p>
                 </div>
             </div>
+            <p class="integration-note">Native integrations: Google Calendar, Outlook, HubSpot, Salesforce.</p>
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
+    <!-- Results Section -->
+    <section id="results" class="results-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Three Steps to Clarity</h2>
-                <p class="section-subtitle">Simple setup, powerful results</p>
+                <div class="section-tag">Proven Results for Business Partners</div>
+                <h2 class="section-title">Based on last 90 days across client campaigns</h2>
             </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Connect</h3>
-                        <p class="step-description">Link your calendar and communication tools in minutes. No complex configuration required.</p>
+            <div class="results-grid">
+                <div class="result-card scroll-animate">
+                    <div class="result-icon">📅</div>
+                    <div class="result-metric">
+                        <span class="result-value" data-count="85">0</span>
+                        <span class="result-percent">%</span>
                     </div>
+                    <h3>Meeting Show-Up Rate</h3>
+                    <p>Percentage of scheduled meetings where prospects actually attend</p>
                 </div>
-                <div class="step-connector">
-                    <svg width="100" height="4" viewBox="0 0 100 4" fill="none">
-                        <line x1="0" y1="2" x2="100" y2="2" stroke="#E2E8F0" stroke-width="4"/>
-                    </svg>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Automate</h3>
-                        <p class="step-description">Set your preferences and let AI handle scheduling, reminders, and coordination.</p>
+                <div class="result-card scroll-animate">
+                    <div class="result-icon">👥</div>
+                    <div class="result-metric">
+                        <span class="result-value" data-count="15">0</span>
+                        <span class="result-suffix">+</span>
                     </div>
+                    <h3>Average Meetings Per Month</h3>
+                    <p>Qualified meetings delivered monthly per client engagement</p>
                 </div>
-                <div class="step-connector">
-                    <svg width="100" height="4" viewBox="0 0 100 4" fill="none">
-                        <line x1="0" y1="2" x2="100" y2="2" stroke="#E2E8F0" stroke-width="4"/>
-                    </svg>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Optimize</h3>
-                        <p class="step-description">Review insights and continuously improve your team's meeting effectiveness.</p>
+                <div class="result-card scroll-animate">
+                    <div class="result-icon">📈</div>
+                    <div class="result-metric">
+                        <span class="result-value" data-count="3">0</span>
+                        <span class="result-suffix">x</span>
                     </div>
+                    <h3>Average Deal Size Increase</h3>
+                    <p>Multiplier effect on deal value through better qualification</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-value">87%</div>
-                    <div class="stat-label">Time Saved</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">10k+</div>
-                    <div class="stat-label">Teams Using</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">2M+</div>
-                    <div class="stat-label">Meetings Automated</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">99.9%</div>
-                    <div class="stat-label">Uptime</div>
+                <div class="result-card scroll-animate">
+                    <div class="result-icon">⚡</div>
+                    <div class="result-metric">
+                        <span class="result-value" data-count="60">0</span>
+                        <span class="result-percent">%</span>
+                    </div>
+                    <h3>Faster Sales Cycle</h3>
+                    <p>Reduction in time from first contact to closed deal</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <!-- Pipeline Process -->
+    <section id="process" class="process-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Simple, Transparent Pricing</h2>
-                <p class="section-subtitle">Choose the plan that fits your team</p>
+                <h2 class="section-title">Our 6-Step Pipeline Process</h2>
+                <p class="section-subtitle">From prospect identification to qualified meetings - here's how we fill your pipeline</p>
             </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3 class="pricing-tier">Starter</h3>
-                    <div class="pricing-amount">
-                        <span class="currency">$</span>
-                        <span class="price">29</span>
-                        <span class="period">/month</span>
+            <div class="process-timeline">
+                <div class="process-step scroll-animate">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <div class="process-header">
+                            <h3>Market Research & Targeting</h3>
+                            <span class="process-time">Week 1</span>
+                        </div>
+                        <p class="process-description">We analyze your ideal customer profile and identify high-value prospects in your target market using advanced data intelligence.</p>
+                        <div class="process-details">
+                            <h4>Key Activities</h4>
+                            <ul>
+                                <li>Comprehensive market analysis</li>
+                                <li>Ideal Customer Profile (ICP) refinement</li>
+                                <li>Prospect database building</li>
+                                <li>Competitive landscape mapping</li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="pricing-features">
-                        <li>Up to 50 meetings/month</li>
-                        <li>Basic scheduling automation</li>
-                        <li>Email integration</li>
-                        <li>Standard support</li>
-                    </ul>
-                    <button class="btn-secondary-large">Get Started</button>
                 </div>
-                <div class="pricing-card featured">
-                    <div class="badge">Most Popular</div>
-                    <h3 class="pricing-tier">Professional</h3>
-                    <div class="pricing-amount">
-                        <span class="currency">$</span>
-                        <span class="price">99</span>
-                        <span class="period">/month</span>
+                <div class="process-step scroll-animate">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <div class="process-header">
+                            <h3>Decision-Maker Identification</h3>
+                            <span class="process-time">Week 1-2</span>
+                        </div>
+                        <p class="process-description">Our team identifies and verifies key decision-makers within target companies, ensuring we reach the right people with buying authority.</p>
+                        <div class="process-details">
+                            <h4>Key Activities</h4>
+                            <ul>
+                                <li>C-level and VP identification</li>
+                                <li>Organizational chart mapping</li>
+                                <li>Contact verification process</li>
+                                <li>Authority level assessment</li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="pricing-features">
-                        <li>Unlimited meetings</li>
-                        <li>Advanced AI automation</li>
-                        <li>Full integrations suite</li>
-                        <li>Analytics & insights</li>
-                        <li>Priority support</li>
-                    </ul>
-                    <button class="btn-primary-large">Get Started</button>
                 </div>
-                <div class="pricing-card">
-                    <h3 class="pricing-tier">Enterprise</h3>
-                    <div class="pricing-amount">
-                        <span class="price-custom">Custom</span>
+                <div class="process-step scroll-animate">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <div class="process-header">
+                            <h3>Personalized Outreach</h3>
+                            <span class="process-time">Week 2-3</span>
+                        </div>
+                        <p class="process-description">We craft highly personalized, multi-channel outreach campaigns that resonate with each prospect's specific pain points and business objectives.</p>
+                        <div class="process-details">
+                            <h4>Key Activities</h4>
+                            <ul>
+                                <li>Custom messaging for each prospect</li>
+                                <li>Multi-channel approach (email, LinkedIn, phone)</li>
+                                <li>Pain point-focused value propositions</li>
+                                <li>Follow-up sequence optimization</li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="pricing-features">
-                        <li>Everything in Professional</li>
-                        <li>Custom integrations</li>
-                        <li>Dedicated account manager</li>
-                        <li>SLA guarantee</li>
-                        <li>Advanced security</li>
-                    </ul>
-                    <button class="btn-secondary-large">Contact Sales</button>
+                </div>
+                <div class="process-step scroll-animate">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <div class="process-header">
+                            <h3>Meeting Qualification & Booking</h3>
+                            <span class="process-time">Week 3-4</span>
+                        </div>
+                        <p class="process-description">We qualify interested prospects and book confirmed meetings directly into your calendar, ensuring each appointment is with a genuine decision-maker.</p>
+                        <div class="process-details">
+                            <h4>Key Activities</h4>
+                            <ul>
+                                <li>Prospect qualification process</li>
+                                <li>Budget and timeline verification</li>
+                                <li>Calendar integration and booking</li>
+                                <li>Meeting confirmation protocols</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step scroll-animate">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <div class="process-header">
+                            <h3>Pre-Meeting Intelligence</h3>
+                            <span class="process-time">Before each meeting</span>
+                        </div>
+                        <p class="process-description">Before each meeting, we provide detailed prospect research and talking points to maximize your conversion potential.</p>
+                        <div class="process-details">
+                            <h4>Key Activities</h4>
+                            <ul>
+                                <li>Company background research</li>
+                                <li>Recent news and developments</li>
+                                <li>Key talking points preparation</li>
+                                <li>Competitive positioning insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step scroll-animate">
+                    <div class="process-number">06</div>
+                    <div class="process-content">
+                        <div class="process-header">
+                            <h3>Performance Optimization</h3>
+                            <span class="process-time">Ongoing</span>
+                        </div>
+                        <p class="process-description">We continuously analyze performance metrics and optimize our approach to improve meeting quality and conversion rates.</p>
+                        <div class="process-details">
+                            <h4>Key Activities</h4>
+                            <ul>
+                                <li>Meeting show-rate tracking</li>
+                                <li>Conversion rate analysis</li>
+                                <li>Campaign performance optimization</li>
+                                <li>Monthly strategy reviews</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
+    <!-- ROI Calculator -->
+    <section id="calculator" class="calculator-section">
         <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Transform Your Meetings?</h2>
-                <p class="cta-subtitle">Join thousands of teams already saving time with intelligent automation</p>
-                <button class="btn-primary-large">Start Your Free Trial</button>
+            <div class="section-header">
+                <h2 class="section-title">Calculate Your Pipeline ROI</h2>
+                <p class="section-subtitle">See how much additional revenue our Pipeline-as-a-Service can generate for your business</p>
+            </div>
+            <div class="calculator-wrapper">
+                <div class="calculator-inputs">
+                    <h3>Your Current Metrics</h3>
+                    <div class="input-group">
+                        <label>Current qualified meetings per month</label>
+                        <input type="range" id="currentMeetings" min="1" max="50" value="5">
+                        <span class="input-value" id="currentMeetingsValue">5</span>
+                    </div>
+                    <div class="input-group">
+                        <label>Average deal size</label>
+                        <input type="range" id="dealSize" min="1000" max="100000" value="10000" step="1000">
+                        <span class="input-value">$<span id="dealSizeValue">10,000</span></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Closing rate</label>
+                        <input type="range" id="closingRate" min="5" max="50" value="20">
+                        <span class="input-value" id="closingRateValue">20</span>%
+                    </div>
+                </div>
+                <div class="calculator-results">
+                    <h3>Your Projected Results</h3>
+                    <div class="result-row">
+                        <span class="result-label">Projected Monthly Meetings</span>
+                        <span class="result-number" id="projectedMeetings">15</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="result-label">ROI Percentage</span>
+                        <span class="result-number highlight" id="roiPercentage">167%</span>
+                    </div>
+                    <div class="result-divider"></div>
+                    <div class="result-row-small">
+                        <span>Current Annual Revenue</span>
+                        <span id="currentRevenue">$120,000</span>
+                    </div>
+                    <div class="result-row-small">
+                        <span>Projected Annual Revenue</span>
+                        <span id="projectedRevenue">$360,000</span>
+                    </div>
+                    <div class="result-row-big">
+                        <span>Additional Revenue</span>
+                        <span class="positive" id="additionalRevenue">+$240,000</span>
+                    </div>
+                    <div class="result-divider"></div>
+                    <div class="result-row-small">
+                        <span>Service Investment</span>
+                        <span id="serviceInvestment">$90,000</span>
+                    </div>
+                    <div class="result-row-highlight">
+                        <span>Net ROI</span>
+                        <span class="positive" id="netROI">$150,000</span>
+                    </div>
+                    <a href="#booking" class="btn-primary-large">Get Started Today</a>
+                    <p class="calculator-note">*Results based on industry averages and client performance data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Success Stories</h2>
+                <p class="section-subtitle">See how businesses like yours are transforming their sales pipeline</p>
+            </div>
+            <div class="testimonial-card scroll-animate">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"Our pipeline was completely transformed. We went from 3-4 qualified meetings per month to 18+ consistently. The quality of prospects is exceptional - they come pre-qualified and ready to discuss serious business. ROI was evident within the first 60 days."</p>
+                </div>
+                <div class="testimonial-footer">
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TH</div>
+                        <div class="author-info">
+                            <div class="author-name">Talia Horvitz</div>
+                            <div class="author-title">VP of Sales</div>
+                            <div class="author-company">Hello Darwin</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stats">
+                        <div class="testimonial-stat">
+                            <div class="stat-value-small">18+</div>
+                            <div class="stat-label-small">meetings/month</div>
+                        </div>
+                        <div class="testimonial-stat">
+                            <div class="stat-value-small">73%</div>
+                            <div class="stat-label-small">show rate</div>
+                        </div>
+                        <div class="testimonial-stat">
+                            <div class="stat-value-small">$2.4M</div>
+                            <div class="stat-label-small">pipeline</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about our Pipeline-as-a-Service</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h3>How does the pay-per-meeting model work?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You only pay for meetings that actually happen. We charge a fixed fee per qualified meeting that shows up on your calendar. If a prospect doesn't attend, you don't pay. This ensures complete alignment between our success and yours.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h3>What qualifies as a 'qualified meeting'?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A qualified meeting is with a verified decision-maker at a target company who has expressed genuine interest in your solution, has confirmed budget availability, and fits your ideal customer profile. We pre-screen all prospects to ensure quality.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h3>How quickly can we start seeing results?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most clients see their first qualified meetings within 2-3 weeks. We ramp up to full capacity by week 4-6, delivering a consistent flow of 15+ qualified meetings per month, depending on your target market and package.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h3>What information do you provide about prospects?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Before each meeting, you receive a detailed dossier including: company background, prospect's role and responsibilities, pain points identified during outreach, recent company news, talking points, and competitive insights. This ensures you're fully prepared for every conversation.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h3>Do you integrate with our existing CRM?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we integrate natively with all major CRMs including Salesforce, HubSpot, Pipedrive, and others. Meetings automatically sync to your calendar (Google Calendar, Outlook) and prospect data flows directly into your CRM system.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h3>What if prospects don't show up to meetings?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You don't pay for no-shows. Our 85% average show-up rate is backed by our confirmation process, reminder sequences, and prospect quality standards. We also reschedule no-shows at no additional cost to maximize your ROI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cta">
+                <p>Still have questions? Let's discuss your specific needs.</p>
+                <a href="#booking" class="btn-secondary-large">Book a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-content">
+                    <h2>Book Your 30-Minute Strategy Session</h2>
+                    <p>Schedule a consultation to discuss your target market and how our Pipeline-as-a-Service can generate qualified meetings for your sales team.</p>
+                    <div class="booking-benefits">
+                        <h3>Our Guarantee</h3>
+                        <ul>
+                            <li>No upfront costs or retainers</li>
+                            <li>Pay only for meetings that show up</li>
+                            <li>85% average show-up rate</li>
+                            <li>Pre-call dossiers included</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <div class="contact-option">
+                        <h3>Prefer to Talk First?</h3>
+                        <p>Send us an email with your requirements and we'll get back to you within 24 hours.</p>
+                        <a href="mailto:ivan@intelligents.agency" class="btn-primary-large">Send us a message</a>
+                        <p class="contact-email">Direct contact: <a href="mailto:ivan@intelligents.agency">ivan@intelligents.agency</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -297,46 +630,40 @@
                         </svg>
                         <span class="logo-text">Intelligents</span>
                     </div>
-                    <p class="footer-tagline">Intelligent meetings for intelligent teams</p>
+                    <p class="footer-tagline">Pipeline-as-a-Service for growth-focused teams</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Product</h4>
+                        <h4>Services</h4>
                         <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#">Integrations</a></li>
-                            <li><a href="#">Security</a></li>
+                            <li><a href="#solution">Complete Solution</a></li>
+                            <li><a href="#process">Our Process</a></li>
+                            <li><a href="#results">Results</a></li>
+                            <li><a href="#calculator">ROI Calculator</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#testimonials">Case Studies</a></li>
+                            <li><a href="mailto:ivan@intelligents.agency">Contact</a></li>
+                            <li><a href="#booking">Book a Call</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Resources</h4>
+                        <h4>Contact</h4>
                         <ul>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">API Reference</a></li>
-                            <li><a href="#">Status</a></li>
+                            <li><a href="mailto:ivan@intelligents.agency">ivan@intelligents.agency</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Intelligents. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
